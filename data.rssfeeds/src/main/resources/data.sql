@@ -1,0 +1,26 @@
+INSERT INTO rssfeeds(id, title, url) values (1, 'Der Spiegel', 'http://www.spiegel.de/schlagzeilen/index.rss');
+INSERT INTO rssfeeds(id, title, url) values (2, 'Zeit Online', 'http://newsfeed.zeit.de/all');
+INSERT INTO rssfeeds(id, title, url) values (3, 'Golem', 'http://rss.golem.de/rss.php?feed=ATOM1.0');
+INSERT INTO rssfeeds(id, title, url) values (4, 'Heise', 'http://www.heise.de/newsticker/heise-atom.xml');
+INSERT INTO rssfeeds(id, title, url) values (5, 'Focus', 'http://rss.focus.de/fol/XML/rss_folnews.xml');
+INSERT INTO rssfeeds(id, title, url) values (6, 'Stern', 'http://www.stern.de/feed/standard/alle-nachrichten/');
+INSERT INTO rssfeeds(id, title, url) values (7, 'Die Welt', 'http://www.welt.de/?service=Rss');
+INSERT INTO rssfeeds(id, title, url) values (8, 'Stuttgarter Nachrichten', 'http://www.stuttgarter-zeitung.de/news.rss.feed');
+INSERT INTO rssfeeds(id, title, url) values (9, 'Frankfurter Allgemeine Zeitung', 'http://www.faz.net/rss/aktuell/');
+INSERT INTO rssfeeds(id, title, url) values (10, 'Stuttgarter Zeitung', 'http://www.stuttgarter-zeitung.de/news.rss.feed');
+INSERT INTO rssfeeds(id, title, url) values (11, 'Kicker', 'http://rss.kicker.de/news/aktuell');
+INSERT INTO rssfeeds(id, title, url) values (12, 'ARD', 'http://www.ard.de/home/ard/ARD_Startseite/21920/index.xml');
+INSERT INTO rssfeeds(id, title, url) values (13, 'Sportschau', 'http://www.sportschau.de//sportschauindex100~_type-rss.feed');
+INSERT INTO rssfeeds(id, title, url) values (14, 'T-Online Sport', 'http://feeds.t-online.de/rss/sport');
+INSERT INTO rssfeeds(id, title, url) values (15, 'T-Online Nachrichten', 'http://feeds.t-online.de/rss/nachrichten');
+INSERT INTO rssfeeds(id, title, url) values (16, 'Bild.de', 'http://www.bild.de/rssfeeds/vw-alles/vw-alles-26970192,sort=1,view=rss2.bild.xml');
+INSERT INTO rssfeeds(id, title, url) values (17, 'N-TV', 'http://www.n-tv.de/rss');
+INSERT INTO rssfeeds(id, title, url) values (18, 'Huffington Post', 'http://www.huffingtonpost.de/feeds/verticals/germany/news.xml');
+INSERT INTO rssfeeds(id, title, url) values (19, 'Der Westen', 'http://www.derwesten.de/?service=rss');
+INSERT INTO rssfeeds(id, title, url) values (20, 'RBB', 'http://www.rbb-online.de/aktuell/index.xml/feed=rss.xml');
+INSERT INTO rssfeeds(id, title, url) values (21, 'RP Online', 'http://www.rp-online.de/feed.rss');
+INSERT INTO rssfeeds(id, title, url) values (22, 'Sueddeutsche', 'http://rss.sueddeutsche.de/app/service/rss/alles/index.rss?output=rss');
+INSERT INTO rssfeeds(id, title, url) values (23, 'Tagesspiegel', 'http://www.tagesspiegel.de/contentexport/feed/politik');
+INSERT INTO rssfeeds(id, title, url) values (24, 'Augsburger Allgemeine Zeitung', 'http://www.augsburger-allgemeine.de/rss');
+INSERT INTO rssfeeds(id, title, url) values (25, 'WirtschaftWoche', 'http://www.wiwo.de/contentexport/feed/rss/schlagzeilen');
+

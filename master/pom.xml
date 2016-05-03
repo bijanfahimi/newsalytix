@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.bijan</groupId>
+	<artifactId>master</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+
+	<properties>
+		<bijan.project.version>${project.version}</bijan.project.version>
+		<storm.version>0.10.0</storm.version>
+		<junit.version>4.12</junit.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.version>3.5.1</maven.compiler.version>
+		<commons.lang.version>3.4</commons.lang.version>
+		<slf4j.version>1.7.18</slf4j.version>
+		<logback.version>1.1.6</logback.version>
+		<maven.compiler.version>3.5.1</maven.compiler.version>
+		<lucene.version>6.0.0</lucene.version>
+		<hamcrest.version>1.3</hamcrest.version>
+		<hamcrest-junit.version>2.0.0.0</hamcrest-junit.version>
+		<guava.version>19.0</guava.version>
+		<spring.boot.version>1.3.3.RELEASE</spring.boot.version>
+		<spring.context.version>4.2.5.RELEASE</spring.context.version>
+		<h2.database.version>1.4.191</h2.database.version>
+		<rome.rss.version>1.6.0</rome.rss.version>
+		<jsoup.version>1.9.1</jsoup.version>
+
+		<!-- maven -->
+		<maven.jar.plugin.version>2.6</maven.jar.plugin.version>
+	</properties>
+
+	<modules>
+		<module>../common</module>
+		<module>../client.similaritems</module>
+		<module>../similaritems</module>
+		<module>../data.rssfeeds</module>
+		<module>../api</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<!-- project -->
+
+			<dependency>
+				<groupId>com.bijan</groupId>
+				<artifactId>similaritems</artifactId>
+				<version>${bijan.project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.bijan</groupId>
+				<artifactId>common</artifactId>
+				<version>${bijan.project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.bijan</groupId>
+				<artifactId>api</artifactId>
+				<version>${bijan.project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.bijan</groupId>
+				<artifactId>client.similaritems</artifactId>
+				<version>${bijan.project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.bijan</groupId>
+				<artifactId>data.rssfeeds</artifactId>
+				<version>${bijan.project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.bijan</groupId>
+				<artifactId>data.rssfeeds</artifactId>
+				<version>${bijan.project.version}</version>
+				<type>test-jar</type>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- util -->
+			<dependency>
+				<groupId>org.jsoup</groupId>
+				<artifactId>jsoup</artifactId>
+				<version>${jsoup.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons.lang.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>${guava.version}</version>
+			</dependency>
+
+			<!-- rss feed reader -->
+			<dependency>
+				<groupId>com.rometools</groupId>
+				<artifactId>rome</artifactId>
+				<version>${rome.rss.version}</version>
+			</dependency>
+
+			<!-- lucene -->
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-core</artifactId>
+				<version>${lucene.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-analyzers-common</artifactId>
+				<version>${lucene.version}</version>
+			</dependency>
+
+
+			<!-- logger -->
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-core</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
+
+
+			<!-- frameworks -->
+
+			<dependency>
+				<groupId>org.apache.storm</groupId>
+				<artifactId>storm-core</artifactId>
+				<version>${storm.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- spring -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter</artifactId>
+				<version>${spring.boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-jetty</artifactId>
+				<version>${spring.boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-data-jpa</artifactId>
+				<version>${spring.boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+				<version>${spring.context.version}</version>
+			</dependency>
+
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-test</artifactId>
+				<version>${spring.boot.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-test</artifactId>
+				<version>${spring.boot.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- test -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.hamcrest</groupId>
+				<artifactId>hamcrest-all</artifactId>
+				<version>${hamcrest.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.hamcrest</groupId>
+				<artifactId>hamcrest-junit</artifactId>
+				<version>${hamcrest-junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.h2database</groupId>
+				<artifactId>h2</artifactId>
+				<version>${h2.database.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven.compiler.version}</version>
+					<configuration>
+						<source>${maven.compiler.source}</source>
+						<target>${maven.compiler.target}</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>${maven.jar.plugin.version}</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>test-jar</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<resources>
+			<resource>
+				<directory>src/test/resources</directory>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
+	</build>
+
+</project>
