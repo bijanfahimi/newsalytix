@@ -7,20 +7,23 @@ import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
+/**
+ * Class representing a term in a text. Ever term must have at least occurrence.
+ */
 public class Term {
 
 	private List<Occurrence> offset;
 	private String term;
 
-	public static Term newTerm(String term){
+	public static Term newTerm(String term) {
 		return new Term(term);
 	}
-	
+
 	public Term(String term) {
 		this.term = term;
 		offset = new ArrayList<>();
 	}
-	
+
 	public void addOccurrence(Integer startOffset, Integer endOffset) {
 		offset.add(occurs(startOffset, endOffset));
 	}

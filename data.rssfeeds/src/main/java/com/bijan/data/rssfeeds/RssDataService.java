@@ -9,6 +9,9 @@ import org.springframework.stereotype.Service;
 
 import com.bijan.data.rssfeeds.model.RssFeed;
 
+/**
+ * Responsible for storing and querying the rss feeds
+ */
 @Service
 public class RssDataService {
 

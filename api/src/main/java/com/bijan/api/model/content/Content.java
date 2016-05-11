@@ -3,6 +3,10 @@ package com.bijan.api.model.content;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Representation of a Content. The most basic data model.
+ * Every content has an identifier and some text. Additionally it can have some {@link Value}s.
+ */
 public class Content {
 
 	private long id;

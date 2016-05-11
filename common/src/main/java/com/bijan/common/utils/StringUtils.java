@@ -13,33 +13,13 @@ public final class StringUtils {
 	
 	public static Pattern spaceRegEx = Pattern.compile("\\s+");
 	
-	public static double handleDouble(String x) {
-		Double y;
-		if (Pattern.matches("N/A", x)) {  
-			y = 0.00;   
-		} else { 
-			y = Double.parseDouble(x);  
-		}  
-		return y;
-	}
-	
-	public static int handleInt(String x) {
-		int y;
-		if (Pattern.matches("N/A", x)) {  
-			y = 0;   
-		} else { 
-			y = Integer.parseInt(x);  
-		} 
-		return y;
-	}
-
 	
 	/**
 	 * 
-	 * Replaces more than one whitespaces with one whitespace
+	 * Replaces more than one white spaces with one whitespace
 	 * 
-	 * @param text
-	 * @return
+	 * @param text 
+	 * @return the text without multiple white spaces
 	 */
 	public static String removeWhitespace(String text) {
 		return spaceRegEx.matcher(text).replaceAll(" ");

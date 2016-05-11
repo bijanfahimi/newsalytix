@@ -11,18 +11,26 @@ import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;
 
 import com.bijan.similaritems.model.text.Term;
 
+/**
+ * Lucence tokenizer for parsing the full text into {@link Term}s
+ */
 public class FulltextTokenizer {
 
 	private SimpleTextAnalyzer analyzer;
 
-	
-	
 	public FulltextTokenizer() {
 		this.analyzer = new SimpleTextAnalyzer();
 	}
 
-
-
+	/**
+	 * Using the {@link SimpleTextAnalyzer} to tokenize the text into
+	 * {@link Term}s.
+	 * 
+	 * @param text
+	 *            the full text
+	 * @return Collection of {@link Term}s
+	 * @throws IOException
+	 */
 	public Collection<Term> textify(String text) throws IOException {
 		TokenStream tokenStream = analyzer.tokenStream("fulltext", text);
 		OffsetAttribute offsetAttribute = tokenStream.addAttribute(OffsetAttribute.class);

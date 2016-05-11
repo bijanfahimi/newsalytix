@@ -1,5 +1,11 @@
 package com.bijan.similaritems.model.text;
 
+/**
+ *  Representing an occurrence of a {@link Term}. 
+ *  
+ *  
+ *
+ */
 public class Occurrence {
 
 	private int startOffset;

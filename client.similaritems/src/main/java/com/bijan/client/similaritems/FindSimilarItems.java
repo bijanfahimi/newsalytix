@@ -8,6 +8,10 @@ import com.bijan.client.similaritems.config.SimilarItemsConfig;
 import com.bijan.data.rssfeeds.config.RssFeedDataConfig;
 
 
+/**
+ * Application Runner for finding similar items in rss feeds 
+ *
+ */
 @SpringBootApplication
 public class FindSimilarItems {
 

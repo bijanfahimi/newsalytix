@@ -10,6 +10,10 @@ import com.bijan.data.rssfeeds.model.RssFeedEntry;
 import com.google.common.hash.HashFunction;
 import com.google.common.hash.Hashing;
 
+/**
+ *  Converts {@link RssFeedEntry}s into a system wide data model {@link Content}.
+ *
+ */
 @Service
 public class RssToContentConvert implements ContentConverter<RssFeedEntry> {
 

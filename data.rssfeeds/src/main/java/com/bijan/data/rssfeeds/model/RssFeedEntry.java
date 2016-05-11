@@ -1,5 +1,9 @@
 package com.bijan.data.rssfeeds.model;
 
+/**
+ * Representing an entry of a rss feed 
+ *
+ */
 public class RssFeedEntry {
 
 	private RssFeed sourceFeed;

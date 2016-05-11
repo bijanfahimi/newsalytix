@@ -5,6 +5,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * Representing a rss feed
+ */
 @Entity
 @Table(name = "rssfeeds")
 public class RssFeed {

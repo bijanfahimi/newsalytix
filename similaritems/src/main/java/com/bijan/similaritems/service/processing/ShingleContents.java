@@ -8,6 +8,9 @@ import com.bijan.common.collection.ContentProcessed;
 import com.bijan.common.collection.SparseBooleanArray;
 import com.bijan.similaritems.service.shingle.TextToShingleToken;
 
+/**
+ * Processes a stream of contents by creating a {@link SparseBooleanArray} from the full text
+ */
 public class ShingleContents {
 
 	private TextToShingleToken textToShingle;
@@ -16,6 +19,13 @@ public class ShingleContents {
 		textToShingle = new TextToShingleToken(shingleSize);
 	}
 
+	/**
+	 * 
+	 * Shingles the contents and creates a sparse array from the content.
+	 * 
+	 * @param contents
+	 * @return Stream of {@link ContentProcessed}
+	 */
 	public Stream<ContentProcessed> shingleContents(Stream<Content> contents) {
 		return contents.map(content -> {
 

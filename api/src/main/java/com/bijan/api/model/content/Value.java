@@ -1,5 +1,11 @@
 package com.bijan.api.model.content;
 
+/**
+ *  Representing the additional information that is added to the content. 
+ *  Like attributes or meta information like creation dates. 
+ *
+ * @param <T>
+ */
 public class Value<T> {
 
 	private T value;

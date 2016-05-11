@@ -4,15 +4,21 @@ import java.util.Random;
 
 import com.bijan.common.collection.SparseBooleanArray;
 
+/**
+ * Creating the min hash signature from a {@link SparseBooleanArray}. Acccording to Leskovec,
+ * Rajaraman & Ullman (2014), "Mining of Massive Datasets", Cambridge University
+ * Press.
+ * 
+ *  
+ */
 public class MinHash {
 
 	private int numOfHash;
 
 	private int[] randomNumbersA;
 	private int[] randomNumbersB;
-	private int[] randomNumbersC;
 
-	private int dictSize = 1_000_000_000;
+	private int dictSize = Integer.MAX_VALUE;
 
 	public MinHash() {
 		this(100);
@@ -22,14 +28,12 @@ public class MinHash {
 		this.numOfHash = numOfHash;
 		randomNumbersA = new int[numOfHash];
 		randomNumbersB = new int[numOfHash];
-		randomNumbersC = new int[numOfHash];
 
 		Random r = new Random();
 
 		for (int i = 0; i < numOfHash; i++) {
 			randomNumbersA[i] = r.nextInt(dictSize);
 			randomNumbersB[i] = r.nextInt(dictSize);
-			randomNumbersC[i] = r.nextInt(dictSize);
 		}
 	}
 
